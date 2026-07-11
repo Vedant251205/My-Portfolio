@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Programming Languages",
+    "skills": [
+      { "name": "C", "icon": "fa-solid fa-c", "level": "Advanced" },
+      { "name": "Java", "icon": "fa-brands fa-java", "level": "Advanced" },
+      { "name": "HTML", "icon": "fa-brands fa-html5", "level": "Advanced" },
+      { "name": "CSS", "icon": "fa-brands fa-css3-alt", "level": "Advanced" },
+      { "name": "JavaScript", "icon": "fa-brands fa-js", "level": "Intermediate" },
+      { "name": "Python", "icon": "fa-brands fa-python", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Frameworks & Tools",
+    "skills": [
+      { "name": "React", "icon": "fa-brands fa-react", "level": "Intermediate" },
+      { "name": "Node.js", "icon": "fa-brands fa-node-js", "level": "Intermediate" },
+      { "name": "Git & GitHub", "icon": "fa-brands fa-github", "level": "Advanced" },
+      { "name": "Linux", "icon": "fa-brands fa-linux", "level": "Advanced" },
+      { "name": "Arduino", "icon": "fa-solid fa-microchip", "level": "Advanced" },
+      { "name": "Raspberry Pi", "icon": "fa-solid fa-microchip", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Core Knowledge",
+    "skills": [
+      { "name": "Data Structures & Algorithms", "icon": "fa-solid fa-sitemap", "level": "Advanced" },
+      { "name": "Object-Oriented Programming", "icon": "fa-solid fa-cubes", "level": "Advanced" },
+      { "name": "DBMS & SQL", "icon": "fa-solid fa-database", "level": "Intermediate" },
+      { "name": "Machine Learning", "icon": "fa-solid fa-brain", "level": "Beginner" },
+      { "name": "NLP", "icon": "fa-solid fa-language", "level": "Beginner" },
+      { "name": "QGIS", "icon": "fa-solid fa-map", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Soft Skills",
+    "skills": [
+      { "name": "Problem Solving", "icon": "fa-solid fa-lightbulb", "level": "Advanced" },
+      { "name": "Team Collaboration", "icon": "fa-solid fa-people-group", "level": "Advanced" },
+      { "name": "Technical Writing", "icon": "fa-solid fa-pen-nib", "level": "Intermediate" },
+      { "name": "Public Speaking", "icon": "fa-solid fa-microphone", "level": "Intermediate" }
+    ]
+  }
+]

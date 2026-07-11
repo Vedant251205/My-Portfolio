@@ -1,0 +1,30 @@
+[
+  {
+    "role": "IT Intern",
+    "company": "UltraTech Cement — Aditya Birla Group",
+    "location": "Bela, India",
+    "duration": "Present",
+    "description": "Worked as an IT Intern gaining practical exposure to technical systems, IT operations, and industry-level workflows."
+  },
+  {
+    "role": "Technical Project Team Member",
+    "company": "Team ITJ Member — KIIT Electrical Society",
+    "location": "Bhubaneswar, Odisha",
+    "duration": "August 2023 – Present",
+    "description": "Built robots like Track Tracer, Sand Rover, and Droid Blitz using Arduino and sensors. Improved robot functionality by tweaking code, calibrating sensors, and fixing hardware issues. Showcased projects at IIT Patna and IIT Kharagpur tech fests."
+  },
+  {
+    "role": "Campus Ambassador",
+    "company": "IIT Kharagpur — Kshitij’25",
+    "location": "Remote",
+    "duration": "January 2025",
+    "description": "Promoted Kshitij’25 across colleges and managed participation in technical competitions and events."
+  },
+  {
+    "role": "Java Development Intern",
+    "company": "CodeAlpha Internship",
+    "location": "Remote",
+    "duration": "March 2025",
+    "description": "Completed a structured internship focused on Java development and real-world problem-solving tasks."
+  }
+]

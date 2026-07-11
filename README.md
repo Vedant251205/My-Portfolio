@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vedant Mishra | Professional Developer Portfolio
 
-## Getting Started
+A clean, minimalistic, and highly professional personal portfolio website built with Next.js 15, Tailwind CSS v4, and GSAP. 
 
-First, run the development server:
+Designed to highlight engineering experience, technical skills, and featured projects with a focus on readability and performance. Features a fully integrated dual-theme (Dark/Light) system and subtle scroll-reveal animations.
+
+## ✨ Key Features
+
+- **Minimalist Professional Design**: Clean layout focusing on content and usability.
+- **Dual-Theme Support**: Built-in dark and light modes with seamless toggling and system-preference detection.
+- **GSAP Animations**: Smooth, performant scroll-reveal animations using GSAP and ScrollTrigger.
+- **Data-Driven Architecture**: All personal information, skills, and projects are isolated in clean JSON files for easy updating.
+- **Fully Responsive**: Optimized for perfect viewing across all device sizes.
+- **SEO Optimized**: Next.js App Router providing excellent performance and SEO out of the box.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations**: [GSAP](https://gsap.com/) & ScrollTrigger
+- **Typography**: Inter & Plus Jakarta Sans (via Next/Font)
+- **Icons**: Font Awesome 6
+- **Deployment**: Vercel Ready
+
+## 🚀 Getting Started Locally
+
+First, clone the repository and install dependencies:
 
 ```bash
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📝 How to Update Your Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The site is built with a data-driven approach. You don't need to dig through complex React components to update your portfolio. Simply modify the JSON files located in the `src/data/` directory:
 
-## Learn More
+- **`src/data/personal.json`**: Update your name, contact info, bio, education, and experience timeline.
+- **`src/data/projects.json`**: Add or remove featured projects, URLs, and tech stacks.
+- **`src/data/skills.json`**: Update your technical arsenal, proficiencies, and Font Awesome icons.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The easiest way to deploy this Next.js application is to use the [Vercel Platform](https://vercel.com). 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your code to a GitHub repository.
+2. Go to [Vercel.com](https://vercel.com), sign in, and click **Add New... > Project**.
+3. Import your GitHub repository.
+4. Leave all default build settings as they are (Vercel automatically detects Next.js).
+5. Click **Deploy**.
 
-## Deploy on Vercel
+Within minutes, your portfolio will be live with a global CDN and automatic HTTPS!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Designed & Built by Vedant Mishra.*

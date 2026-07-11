@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Stack Room",
+    "category": "Web",
+    "description": "A collaborative developer community platform for resource sharing and learning. Contributed to the frontend architecture and UI components.",
+    "features": ["Community forum", "Resource sharing", "User profiles"],
+    "url": "stack-room.dev",
+    "technologies": ["React", "Node.js", "CSS"]
+  },
+  {
+    "name": "Stock Trading Platform",
+    "category": "Web",
+    "description": "A simulated stock trading platform with real-time market data visualization, portfolio tracking, and buy/sell order execution. Designed to help beginners understand stock markets.",
+    "features": ["Market data charts", "Portfolio management", "Order execution", "Performance analytics"],
+    "technologies": ["JavaScript", "HTML", "CSS"]
+  },
+  {
+    "name": "AI Chatbot",
+    "category": "AI",
+    "description": "An intelligent chatbot leveraging Natural Language Processing and machine learning to understand user queries and provide contextual responses.",
+    "features": ["Natural language understanding", "Context-aware responses", "Training pipeline"],
+    "technologies": ["Python", "NLP", "Machine Learning"]
+  },
+  {
+    "name": "Student Grade Tracker",
+    "category": "Web",
+    "description": "A Java-based desktop application for managing student academic records. Supports grade input, GPA calculation, and performance analysis with data persistence.",
+    "features": ["Grade management", "GPA calculator", "Performance reports", "Data export"],
+    "technologies": ["Java", "JavaFX"]
+  },
+  {
+    "name": "Track Tracer Robot",
+    "category": "Hardware",
+    "description": "An autonomous line-following robot built for the IIT Patna tech fest. Uses infrared sensor arrays for real-time path detection and PID-based motor control for smooth navigation.",
+    "features": ["IR sensor array", "PID control", "Autonomous navigation"],
+    "technologies": ["Arduino", "C++", "Sensors"]
+  },
+  {
+    "name": "Sand Rover",
+    "category": "Hardware",
+    "description": "A terrain-adaptive robot designed for sand and rough surface navigation. Features custom wheel design and embedded control systems optimized for unstable surfaces.",
+    "features": ["Terrain adaptation", "Custom drivetrain", "Remote control"],
+    "technologies": ["Embedded Systems", "Raspberry Pi", "Sensors"]
+  },
+  {
+    "name": "Droid Blitz",
+    "category": "Hardware",
+    "description": "An obstacle-avoidance robot with ultrasonic sensor-based environment mapping and intelligent pathfinding. Showcased at IIT Kharagpur tech fest.",
+    "features": ["Ultrasonic mapping", "Pathfinding algorithm", "Real-time obstacle avoidance"],
+    "technologies": ["Arduino", "C++", "Ultrasonic Sensors"]
+  }
+]

@@ -1,26 +1,121 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-orbitron);
+  --font-heading: var(--font-syncopate);
+
+  --color-cyber-blue: var(--theme-cyber-blue);
+  --color-neon-purple: var(--theme-neon-purple);
+  --color-deep-purple: var(--theme-deep-purple);
+  --color-matrix-green: var(--theme-matrix-green);
+  --color-dark-bg: var(--theme-bg);
+  --color-dark-surface: var(--theme-surface);
+  --color-dark-card: var(--theme-card);
+  
+  --color-glass-bg: var(--theme-glass-bg);
+  --color-glass-border: var(--theme-glass-border);
+  --color-text-primary: var(--theme-text-primary);
+  --color-text-secondary: var(--theme-text-secondary);
+  
+  --shadow-neon: var(--theme-shadow-neon);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Light Mode Variables (Solar Corporate) */
+    --theme-cyber-blue: #0284c7;
+    --theme-neon-purple: #9333ea;
+    --theme-deep-purple: #7e22ce;
+    --theme-matrix-green: #16a34a;
+    --theme-bg: #f8fafc;
+    --theme-surface: #f1f5f9;
+    --theme-card: #ffffff;
+    
+    --theme-glass-bg: rgba(0, 0, 0, 0.03);
+    --theme-glass-border: rgba(0, 0, 0, 0.1);
+    --theme-text-primary: #0f172a;
+    --theme-text-secondary: #475569;
+    --theme-shadow-neon: 0 0 10px rgba(2, 132, 199, 0.2), 0 0 20px rgba(2, 132, 199, 0.1);
+  }
+
+  .dark {
+    /* Dark Mode Variables (Cyberpunk) */
+    --theme-cyber-blue: #00d4ff;
+    --theme-neon-purple: #a855f7;
+    --theme-deep-purple: #7c3aed;
+    --theme-matrix-green: #00ff41;
+    --theme-bg: #0a0a0f;
+    --theme-surface: #1a1a2e;
+    --theme-card: #16213e;
+    
+    --theme-glass-bg: rgba(255, 255, 255, 0.05);
+    --theme-glass-border: rgba(255, 255, 255, 0.1);
+    --theme-text-primary: #e2e8f0;
+    --theme-text-secondary: #94a3b8;
+    --theme-shadow-neon: 0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3);
+  }
+
+  body {
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-cyber-blue);
+    color: var(--color-dark-bg);
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-dark-bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-dark-surface);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-cyber-blue);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass-card {
+    background: var(--color-glass-bg);
+    border: 1px solid var(--color-glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+  }
+
+  .neon-border {
+    border: 1px solid var(--color-cyber-blue);
+    box-shadow: var(--shadow-neon);
+  }
+
+  .text-neon {
+    color: var(--color-cyber-blue);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+  }
+
+  .scanline {
+    position: relative;
+    overflow: hidden;
+  }
+  .scanline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+    background-size: 100% 4px;
+    z-index: 10;
+    pointer-events: none;
+  }
 }

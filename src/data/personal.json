@@ -1,0 +1,38 @@
+{
+  "name": "Vedant Mishra",
+  "role": ["Full Stack Developer", "AI Builder", "Cybersecurity Enthusiast"],
+  "tagline": "Building impactful software at the intersection of web, AI, and embedded systems.",
+  "email": "mishravedant2512@gmail.com",
+  "phone": "+91 8839776556",
+  "location": "Bhubaneswar, Odisha",
+  "github": "https://github.com/Vedant251205",
+  "linkedin": "https://linkedin.com/in/vedant-mishra-347720353",
+  "about": "I'm a 4th-year Computer Science student at KIIT University, passionate about building real-world solutions through software, robotics, and AI. I specialize in full-stack web development using modern frameworks and have hands-on experience with embedded systems and autonomous robotics. My projects have been showcased at premier tech fests at IIT Patna and IIT Kharagpur, reflecting my drive for innovation and continuous learning.",
+  "education": {
+    "university": "Kalinga Institute of Industrial Technology (KIIT)",
+    "degree": "Bachelor of Technology in Computer Science",
+    "duration": "August 2023 – June 2027",
+    "location": "Bhubaneswar, Odisha"
+  },
+  "experience": [
+    {
+      "title": "Open Source Contributor",
+      "organization": "Stack Room",
+      "duration": "2024 – Present",
+      "description": "Contributing to the Stack Room platform — a developer community tool for collaborative learning and resource sharing."
+    },
+    {
+      "title": "Robotics Developer",
+      "organization": "IIT Patna & IIT Kharagpur Tech Fests",
+      "duration": "2023 – 2024",
+      "description": "Designed and built autonomous robots (Track Tracer, Sand Rover, Droid Blitz) using Arduino, Raspberry Pi, and sensor arrays. Competed in national-level robotics competitions."
+    },
+    {
+      "title": "Web Developer",
+      "organization": "Personal & Academic Projects",
+      "duration": "2023 – Present",
+      "description": "Building full-stack applications including a stock trading simulator, AI-powered chatbot, and student grade management system."
+    }
+  ],
+  "interests": ["Artificial Intelligence", "Cybersecurity", "Robotics", "Open Source", "Competitive Programming"]
+}
