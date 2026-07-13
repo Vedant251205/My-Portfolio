@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Orbitron, Syncopate } from "next/font/google";
+import { Orbitron, Syncopate, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "@/components/layout/SmoothScrolling";
 
@@ -14,6 +14,12 @@ const syncopate = Syncopate({
   variable: "--font-syncopate",
   weight: ["400", "700"],
   subsets: ["latin"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -35,7 +41,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${orbitron.variable} ${syncopate.variable} antialiased bg-dark-bg text-text-primary transition-colors duration-300`}
+        className={`${orbitron.variable} ${syncopate.variable} ${playfair.variable} antialiased bg-dark-bg text-text-primary transition-colors duration-300`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <SmoothScrolling>

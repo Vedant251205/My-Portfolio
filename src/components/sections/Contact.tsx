@@ -152,13 +152,13 @@ export default function Contact() {
 
               <div className="mt-8 flex justify-center gap-6">
                 {personalData.github && (
-                  <a href={personalData.github} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
-                    GitHub
+                  <a href={personalData.github} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+                    <i className="fa-brands fa-github text-xl"></i> GitHub
                   </a>
                 )}
                 {personalData.linkedin && (
-                  <a href={personalData.linkedin} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
-                    LinkedIn
+                  <a href={personalData.linkedin} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+                    <i className="fa-brands fa-linkedin text-xl"></i> LinkedIn
                   </a>
                 )}
               </div>

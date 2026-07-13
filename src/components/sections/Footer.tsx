@@ -50,18 +50,19 @@ export default function Footer() {
 
         <div className="flex gap-8 mb-12 border-t border-glass-border pt-8 w-full max-w-lg justify-center">
           {[
-            { label: 'GitHub', url: personalData.github },
-            { label: 'LinkedIn', url: personalData.linkedin },
-            { label: 'Email', url: `mailto:${personalData.email}` }
+            { label: 'GitHub', icon: 'fa-brands fa-github', url: personalData.github },
+            { label: 'LinkedIn', icon: 'fa-brands fa-linkedin', url: personalData.linkedin },
+            { label: 'Email', icon: 'fa-solid fa-envelope', url: `mailto:${personalData.email}` }
           ].map((link, idx) => link.url && (
             <a 
               key={idx}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-mono text-sm text-text-secondary hover:text-cyber-blue hover:-translate-y-1 transition-all duration-300"
+              className="font-mono text-sm text-text-secondary hover:text-cyber-blue transition-colors flex items-center gap-2"
             >
-              [{link.label.toUpperCase()}]
+              <i className={`${link.icon} text-lg`}></i>
+              <span className="hidden sm:inline">{link.label}</span>
             </a>
           ))}
         </div>

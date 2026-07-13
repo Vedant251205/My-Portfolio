@@ -1,26 +1,25 @@
-# Vedant Mishra | Professional Developer Portfolio
+# Vedant Mishra | Premium 3D Portfolio
 
-A clean, minimalistic, and highly professional personal portfolio website built with Next.js 15, Tailwind CSS v4, and GSAP. 
+A highly immersive, premium personal portfolio website built with Next.js 15, React Three Fiber, Tailwind CSS v4, and Framer Motion. 
 
-Designed to highlight engineering experience, technical skills, and featured projects with a focus on readability and performance. Features a fully integrated dual-theme (Dark/Light) system and subtle scroll-reveal animations.
+Designed with a **High-End Creative Agency** aesthetic, this portfolio blends elegant serif typography with a stunning, dynamically lit 3D centerpiece. It features a fully integrated dual-theme (Dark/Light) system, smooth scroll-reveal animations, and data-driven architecture.
 
 ## ✨ Key Features
 
-- **Minimalist Professional Design**: Clean layout focusing on content and usability.
-- **Dual-Theme Support**: Built-in dark and light modes with seamless toggling and system-preference detection.
-- **GSAP Animations**: Smooth, performant scroll-reveal animations using GSAP and ScrollTrigger.
+- **Premium 3D Centerpiece**: A custom glossy Torus built with `@react-three/fiber` featuring dynamic studio lighting and iridescent reflections.
+- **Elegant Typography**: Utilizing *Playfair Display* for a sophisticated, high-contrast visual hierarchy alongside modern monospaced fonts.
+- **Dynamic Dual-Theme**: Built-in dark and light modes with custom CSS variables that seamlessly adapt background gradients, text-glow, and drop-shadows to ensure perfect 3D contrast.
 - **Data-Driven Architecture**: All personal information, skills, and projects are isolated in clean JSON files for easy updating.
-- **Fully Responsive**: Optimized for perfect viewing across all device sizes.
-- **SEO Optimized**: Next.js App Router providing excellent performance and SEO out of the box.
+- **Smooth Animations**: High-performance mount and scroll-reveal animations powered by Framer Motion and GSAP.
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router & Turbopack)
+- **3D Rendering**: [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) & Drei
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [GSAP](https://gsap.com/) & ScrollTrigger
-- **Typography**: Inter & Plus Jakarta Sans (via Next/Font)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) & [GSAP](https://gsap.com/)
+- **Typography**: Playfair Display, Orbitron, & Syncopate (via Next/Font)
 - **Icons**: Font Awesome 6
-- **Deployment**: Vercel Ready
 
 ## 🚀 Getting Started Locally
 
@@ -38,7 +37,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📝 How to Update Your Content
 
-The site is built with a data-driven approach. You don't need to dig through complex React components to update your portfolio. Simply modify the JSON files located in the `src/data/` directory:
+The site is built with a data-driven approach. You don't need to dig through complex React components to update your portfolio text. Simply modify the JSON files located in the `src/data/` directory:
 
 - **`src/data/personal.json`**: Update your name, contact info, bio, education, and experience timeline.
 - **`src/data/projects.json`**: Add or remove featured projects, URLs, and tech stacks.

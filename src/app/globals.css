@@ -3,6 +3,7 @@
 @theme {
   --font-sans: var(--font-orbitron);
   --font-heading: var(--font-syncopate);
+  --font-serif: var(--font-serif);
 
   --color-cyber-blue: var(--theme-cyber-blue);
   --color-neon-purple: var(--theme-neon-purple);
@@ -22,37 +23,41 @@
 
 @layer base {
   :root {
-    /* Light Mode Variables (Solar Corporate) */
-    --theme-cyber-blue: #0284c7;
-    --theme-neon-purple: #9333ea;
-    --theme-deep-purple: #7e22ce;
-    --theme-matrix-green: #16a34a;
+    /* Light Mode Variables (Premium Modern) */
+    --theme-cyber-blue: #2563eb;
+    --theme-neon-purple: #7c3aed;
+    --theme-deep-purple: #6d28d9;
+    --theme-matrix-green: #059669;
     --theme-bg: #f8fafc;
     --theme-surface: #f1f5f9;
     --theme-card: #ffffff;
     
-    --theme-glass-bg: rgba(0, 0, 0, 0.03);
-    --theme-glass-border: rgba(0, 0, 0, 0.1);
+    --theme-glass-bg: rgba(255, 255, 255, 0.6);
+    --theme-glass-border: rgba(0, 0, 0, 0.05);
     --theme-text-primary: #0f172a;
     --theme-text-secondary: #475569;
-    --theme-shadow-neon: 0 0 10px rgba(2, 132, 199, 0.2), 0 0 20px rgba(2, 132, 199, 0.1);
+    --theme-shadow-neon: 0 4px 14px 0 rgba(37, 99, 235, 0.15);
+    --theme-scanline: rgba(0, 0, 0, 0);
+    --theme-text-glow: none;
   }
 
   .dark {
-    /* Dark Mode Variables (Cyberpunk) */
-    --theme-cyber-blue: #00d4ff;
-    --theme-neon-purple: #a855f7;
+    /* Dark Mode Variables (Premium Modern) */
+    --theme-cyber-blue: #3b82f6;
+    --theme-neon-purple: #8b5cf6;
     --theme-deep-purple: #7c3aed;
-    --theme-matrix-green: #00ff41;
-    --theme-bg: #0a0a0f;
-    --theme-surface: #1a1a2e;
-    --theme-card: #16213e;
+    --theme-matrix-green: #10b981;
+    --theme-bg: #0f172a;
+    --theme-surface: #1e293b;
+    --theme-card: #0b1120;
     
-    --theme-glass-bg: rgba(255, 255, 255, 0.05);
-    --theme-glass-border: rgba(255, 255, 255, 0.1);
-    --theme-text-primary: #e2e8f0;
+    --theme-glass-bg: rgba(30, 41, 59, 0.6);
+    --theme-glass-border: rgba(255, 255, 255, 0.08);
+    --theme-text-primary: #f8fafc;
     --theme-text-secondary: #94a3b8;
-    --theme-shadow-neon: 0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3);
+    --theme-shadow-neon: 0 4px 14px 0 rgba(59, 130, 246, 0.25);
+    --theme-scanline: rgba(0, 0, 0, 0.1);
+    --theme-text-glow: 0 0 10px var(--theme-cyber-blue);
   }
 
   body {
@@ -97,9 +102,9 @@
     box-shadow: var(--shadow-neon);
   }
 
-  .text-neon {
+  .glow-text {
     color: var(--color-cyber-blue);
-    text-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+    text-shadow: var(--theme-text-glow);
   }
 
   .scanline {
@@ -113,7 +118,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+    background: linear-gradient(to bottom, transparent, transparent 50%, var(--theme-scanline) 50%, var(--theme-scanline));
     background-size: 100% 4px;
     z-index: 10;
     pointer-events: none;
